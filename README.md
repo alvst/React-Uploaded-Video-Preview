@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Video Upload React Preview
+Preview uploaded videos in React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Given a file, a preview of a specified time will be shown. 
 
 ## Available Scripts
 

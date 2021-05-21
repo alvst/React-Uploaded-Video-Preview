@@ -1,71 +1,50 @@
 # Video Upload React Preview
+
 Preview uploaded videos in React
 
-Given a file, a preview of a specified time will be shown. 
+Given a file, a preview of a specified time will be shown.
 
-## Available Scripts
+## Installation
 
 In the project directory, you can run:
 
-### `yarn start`
+```git clone https://github.com/alvst/video-upload-react.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Usage
 
-### `yarn test`
+```es6
+import FileThumbnail from "react-video-thumbnail";
+...
+<FileThumbnail
+          file={file}
+          startTime={3000}
+          canvasSize={900}
+          startTimeFail={2}
+          finalFail={"end"} //beginning end or e
+          DefaultFailedOrientation={"Horizontal"}
+          // CustomFailedFileImageHorizontal={CustomFailedHorizontal}
+          // CustomFailedFileImageVertical={CustomFailedVertical}
+        />
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## Properties
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Prop Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| **file** (Required) | **object** | | A single file (not link) |
+| **startTime** | **int** | 0 |The ability to set an arbitrary time for the preview timestamp to show |
+| **canvasSize** | **int** | 200 | the width the thumbnail will be |
+| **startTimeFail** | **number** |  | If **startTime** specified is not available, because the file is too short, this is a secondary fall back. |
+| **finalFail** | **string** | "Beginning" | If startTime and starTimeFail both are not available (because they are both too large), finalFail is the final fallback. You can specify beginning (default) or end (or e for end) and the last frame will be used. |
+| **defaultFailedOrientation** | **string** | Horizontal | If the file cannot display (due to incompatable file type or a javascript error) and if no custom files are selected, a default file is included that will be displayed. One horizontal, one vertical file are included. Specifying **Horizontal** or **Vertical** will be used as a fallback. |
+| **CustomFailedFileImageHorizontal** | **object** | | A custom Horizontal file that will be displayed if the file cannot be displayed|
+| **CustomFailedFileImageVertical** | **object** | | A custom Horizontal file that will be displayed if the file cannot be displayed |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+*Note: due to webpage memory constraints, you may want to limit the amount of times this is run on a single page. a maximum of 4 times is my recommendation as after it often reloads the page. Please file a pull request if you know how to fix this.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##Examples:
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Contributions:

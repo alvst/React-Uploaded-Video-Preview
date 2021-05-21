@@ -8,7 +8,8 @@ Given a file, a preview of a specified time will be shown.
 
 In the project directory, you can run:
 
-```git clone https://github.com/alvst/video-upload-react.git
+```
+git clone https://github.com/alvst/video-upload-react.git
 
 ```
 

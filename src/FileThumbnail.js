@@ -186,7 +186,6 @@ class FileThumbnail extends Component {
           }}
           alt={this.props.altText}
         ></img>
-        <p></p>
       </div>
     );
   }

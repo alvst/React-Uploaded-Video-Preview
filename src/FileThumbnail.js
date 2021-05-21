@@ -185,8 +185,8 @@ class FileThumbnail extends Component {
             // margin: "auto",
           }}
           alt={this.props.altText}
-      
         ></img>
+        <p></p>
       </div>
     );
   }

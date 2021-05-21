@@ -9,14 +9,13 @@ Given a file, a preview of a specified time will be shown.
 In the project directory, you can run:
 
 ```
-git clone https://github.com/alvst/video-upload-react.git
-
+git clone https://github.com/alvst/react-uploaded-video-preview.git
 ```
 
 ### Usage
 
 ```es6
-import FileThumbnail from "react-video-thumbnail";
+import FileThumbnail from "react-uploaded-video-preview";
 ...
 <FileThumbnail
           file={file}
@@ -45,6 +44,10 @@ import FileThumbnail from "react-video-thumbnail";
 | **CustomFailedFileImageVertical** | **object** | | A custom Horizontal file that will be displayed if the file cannot be displayed |
 
 *Note: due to webpage memory constraints, you may want to limit the amount of times this is run on a single page. a maximum of 4 times is my recommendation as after it often reloads the page. Please file a pull request if you know how to fix this.
+
+## Limitations:
+
+This does not work for linking videos. For linking videos, check out other Github repositories [like](https://github.com/brothatru/react-video-thumbnail).
 
 ## Examples:
 

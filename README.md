@@ -18,15 +18,15 @@ git clone https://github.com/alvst/react-uploaded-video-preview.git
 import FileThumbnail from "react-uploaded-video-preview";
 ...
 <FileThumbnail
-          file={file}
-          startTime={3000}
-          canvasSize={900}
-          startTimeFail={2}
-          finalFail={"end"} //beginning end or e
-          DefaultFailedOrientation={"Horizontal"}
-          // CustomFailedFileImageHorizontal={CustomFailedHorizontal}
-          // CustomFailedFileImageVertical={CustomFailedVertical}
-        />
+    file={file}
+    startTime={3000}
+    canvasSize={900}
+    startTimeFail={2}
+    finalFail={"end"} //beginning end or e
+    DefaultFailedOrientation={"Horizontal"}
+    // CustomFailedFileImageHorizontal={CustomFailedHorizontal}
+    // CustomFailedFileImageVertical={CustomFailedVertical}
+    />
 ```
 
 

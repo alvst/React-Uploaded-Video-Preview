@@ -38,7 +38,7 @@ import FileThumbnail from "react-uploaded-video-preview";
 | **canvasSize** | **int** | 200 | the width the thumbnail will be |
 | **startTime** | **int** | 0 |The ability to set an arbitrary time for the preview timestamp to show |
 | **startTimeFail** | **int** |  | If **startTime** specified is not available, because the file is too short, this is a secondary fall back. |
-| **finalFail** | **string** | "Beginning" | If startTime and starTimeFail both are not available (because they are both too large), finalFail is the final fallback. You can specify beginning (default) or end (or e for end) and the last frame will be used. |
+| **finalFail** | **string** | Beginning | If startTime and starTimeFail both are not available (because they are both too large), finalFail is the final fallback. You can specify beginning (default) or end (or e for end) and the last frame will be used. |
 | **defaultFailedOrientation** | **string** | Horizontal | If the file cannot display (due to incompatable file type or a javascript error) and if no custom files are selected, a default file is included that will be displayed. One horizontal, one vertical file are included. Specifying **Horizontal** or **Vertical** will be used as a fallback. |
 | **CustomFailedFileImageHorizontal** | **object** | | A custom Horizontal file that will be displayed if the file cannot be displayed|
 | **CustomFailedFileImageVertical** | **object** | | A custom Horizontal file that will be displayed if the file cannot be displayed |
@@ -52,3 +52,4 @@ This does not work for linking videos. For linking videos, check out other Githu
 ## Examples:
 
 ## Contributions:
+This project was inspired by the [React Video Thumbnail](https://github.com/brothatru/react-video-thumbnail) as well as [this Stack Overflow answer](https://stackoverflow.com/a/63474748/10516042).

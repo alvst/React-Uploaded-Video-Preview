@@ -59,7 +59,7 @@ This does not work for linking videos. For linking videos, check out other Githu
 For an example see [here](https://github.com/alvst/demo-react-uploaded-video-preview).
 
 ## Contribution:
-Want to contribute? Please file an [issue](https://github.com/alvst/react-uploaded-video-preview/issues) or [pull request](https://github.com/alvst/react-uploaded-video-preview/pulls)
+Want to contribute? Please file an [issue](https://github.com/alvst/react-uploaded-video-preview/issues) or [pull request](https://github.com/alvst/react-uploaded-video-preview/pulls).
 
 ## Inspiration & Credits:
 This project was inspired by the [React Video Thumbnail Project](https://github.com/brothatru/react-video-thumbnail) as well as [this Stack Overflow answer](https://stackoverflow.com/a/63474748/10516042).

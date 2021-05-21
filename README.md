@@ -35,9 +35,9 @@ import FileThumbnail from "react-video-thumbnail";
 | Prop Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | **file** (Required) | **object** | | A single file (not link) |
-| **startTime** | **int** | 0 |The ability to set an arbitrary time for the preview timestamp to show |
 | **canvasSize** | **int** | 200 | the width the thumbnail will be |
-| **startTimeFail** | **number** |  | If **startTime** specified is not available, because the file is too short, this is a secondary fall back. |
+| **startTime** | **int** | 0 |The ability to set an arbitrary time for the preview timestamp to show |
+| **startTimeFail** | **int** |  | If **startTime** specified is not available, because the file is too short, this is a secondary fall back. |
 | **finalFail** | **string** | "Beginning" | If startTime and starTimeFail both are not available (because they are both too large), finalFail is the final fallback. You can specify beginning (default) or end (or e for end) and the last frame will be used. |
 | **defaultFailedOrientation** | **string** | Horizontal | If the file cannot display (due to incompatable file type or a javascript error) and if no custom files are selected, a default file is included that will be displayed. One horizontal, one vertical file are included. Specifying **Horizontal** or **Vertical** will be used as a fallback. |
 | **CustomFailedFileImageHorizontal** | **object** | | A custom Horizontal file that will be displayed if the file cannot be displayed|
@@ -45,6 +45,6 @@ import FileThumbnail from "react-video-thumbnail";
 
 *Note: due to webpage memory constraints, you may want to limit the amount of times this is run on a single page. a maximum of 4 times is my recommendation as after it often reloads the page. Please file a pull request if you know how to fix this.
 
-##Examples:
+## Examples:
 
-##Contributions:
+## Contributions:

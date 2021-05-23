@@ -1,12 +1,10 @@
 # Video Upload React Preview
 
-Preview uploaded videos in React
-
-Given a file, a preview of a specified time will be shown.
+Preview an uploaded video file client side (without any server interaction). You can also select an arbitrary time to set the preview at or show the beginning or end of the video.
 
 ## Installation
 
-In the project directory, you can run:
+In the project src directory, you can run:
 
 ```
 git clone https://github.com/alvst/react-uploaded-video-preview.git
@@ -15,7 +13,7 @@ git clone https://github.com/alvst/react-uploaded-video-preview.git
 ### Usage
 
 ```es6
-import FileThumbnail from "react-uploaded-video-preview";
+import FileThumbnail from "./react-uploaded-video-preview";
 ...
 <FileThumbnail
     file={file}
@@ -48,8 +46,9 @@ import FileThumbnail from "react-uploaded-video-preview";
 
 ## Known Problems:
 
-Only Safari is able to display .mov/.MOV file previews. If a .mov file is uploaded in a non-safari browser, a failed image file will shown. Using either ```CustomFailedFileImageHorizontal```
-or ```CustomFailedFileImageVertical``` you can display your own custom file.
+Only Safari is able to display .mov/.MOV file previews. If a .mov file is uploaded in a non-safari browser, a failed image file will shown. Using either ```CustomFailedFileImageHorizontal``` or ```CustomFailedFileImageVertical``` you can display your own custom file.
+
+Attempting to display too many files can result in the page crashing (and the uploaded files being removed) depending on the browser and the users computer's RAM constraints. I recommend limiting the amount of files displayed to limit storage usage. You may also want to provide an option to not display the files.  If you know how to fix this, please file a [pull request](https://github.com/alvst/react-uploaded-video-preview/pulls). 
 
 ## Limitations:
 

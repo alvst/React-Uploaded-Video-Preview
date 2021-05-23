@@ -4,7 +4,7 @@ Preview an uploaded video file client side (without any server interaction). You
 
 ## Installation
 
-In the project src directory, you can run:
+In your project's src directory, you can run:
 
 ```
 git clone https://github.com/alvst/react-uploaded-video-preview.git

@@ -4,7 +4,15 @@ Preview an uploaded video file client side (without any server interaction). You
 
 ## Installation
 
-In your project's src directory, you can run:
+Install from NPM
+
+```
+npm i react-video-upload-preview
+```
+
+OR
+
+Install from Github: In your project's src directory, you can run:
 
 ```
 git clone https://github.com/alvst/react-uploaded-video-preview.git
@@ -13,18 +21,19 @@ git clone https://github.com/alvst/react-uploaded-video-preview.git
 ### Usage
 
 ```es6
-import FileThumbnail from "./react-uploaded-video-preview";
+import FileThumbnail from "react-uploaded-video-preview";
 ...
 <FileThumbnail
     file={file}
+    // Optional:
     startTime={3000}
     canvasSize={900}
     startTimeFail={2}
     finalFail={"end"}
     DefaultFailedOrientation={"Horizontal"}
     altText={"Custom Alt Text for screen readers"}
-    // CustomFailedFileImageHorizontal={CustomFailedHorizontal}
-    // CustomFailedFileImageVertical={CustomFailedVertical}
+    CustomFailedFileImageHorizontal={CustomFailedHorizontal}
+    CustomFailedFileImageVertical={CustomFailedVertical}
     />
 ```
 
@@ -55,10 +64,13 @@ Attempting to display too many files can result in the page crashing (and the up
 This does not work for linking videos. For linking videos, check out other Github repositories [like](https://github.com/brothatru/react-video-thumbnail).
 
 ## Examples:
+
 For an example see [here](https://github.com/alvst/demo-react-uploaded-video-preview).
 
 ## Contribution:
+
 Want to contribute? Please file an [issue](https://github.com/alvst/react-uploaded-video-preview/issues) or [pull request](https://github.com/alvst/react-uploaded-video-preview/pulls).
 
 ## Inspiration & Credits:
+
 This project was inspired by the [React Video Thumbnail Project](https://github.com/brothatru/react-video-thumbnail) as well as [this Stack Overflow answer](https://stackoverflow.com/a/63474748/10516042).
